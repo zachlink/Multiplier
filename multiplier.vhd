@@ -1,15 +1,15 @@
 library ieee;
 use ieee.std_logic_1164.all;
 
-entity Final_Exam is
+entity multiplier is
     port (
         NumA, NumB : in  std_logic_vector(3 downto 0);
         clk, reset : in  std_logic;
         RegR_out   : out std_logic_vector(7 downto 0)
     );
-end Final_Exam;
+end multiplier;
 
-architecture arch of Final_Exam is
+architecture arch of multiplier is
 
     component mux2to1
         port (
@@ -110,3 +110,4 @@ begin
     RegR_out <= RegR;
 
 end arch;
+
